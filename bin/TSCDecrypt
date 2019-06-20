@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const TSC = require('../lib/TSC');
+const inquirer = require('inquirer');
+
+inquirer.prompt([
+  {
+    type: 'string',
+    name: 'source',
+    message: 'Source file:'
+  },
+  {
+    type: 'string',
+    name: 'dest',
+    message: 'Destination file:'
+  }
+])
+  .then(answers => {
+    return TSC().fromFile(answers.source).decrypt().toFile(answers.dest);
+  })
+  .then(function () {
+    console.log('Done!');
+    process.exit();
+  });

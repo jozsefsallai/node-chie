@@ -1,0 +1,41 @@
+{
+  "name": "chie",
+  "version": "0.0.1",
+  "description": "TSC encryption/decryption tool.",
+  "main": "index.js",
+  "repository": "jozsefsallai/chie",
+  "author": "József Sallai @jozsefsallai",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.4",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  },
+  "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "lint": "eslint lib",
+    "test": "mocha test",
+    "test:cover": "nyc --reporter=lcov --reporter=text npm run test"
+  },
+  "dependencies": {
+    "inquirer": "^6.4.0"
+  },
+  "bin": {
+    "decrypt-tsc": "./bin/TSCDecrypt",
+    "encrypt-tsc": "./bin/TSCEncrypt"
+  },
+  "keywords": [
+    "chie", "cave story", "tsc", "encryption", "decryption"
+  ],
+  "files": [
+    "/bin",
+    "/lib"
+  ]
+}
