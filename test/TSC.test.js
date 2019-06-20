@@ -98,6 +98,10 @@ describe('TSC', function () {
       return fs.unlinkSync(path.join(__dirname, 'out.txt'));
     });
 
+    it('should throw when no file is provided', function () {
+      return expect(() => TSC().fromFile(fixtures.TSC).decrypt().toFile()).to.throw(Error);
+    })
+
     it('should create file', function () {
       return expect(fs.existsSync(path.join(__dirname, 'out.txt'))).to.be.true;
     });
