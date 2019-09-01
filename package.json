@@ -1,6 +1,6 @@
 {
   "name": "chie",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TSC encryption/decryption tool.",
   "main": "index.js",
   "repository": "jozsefsallai/chie",
