@@ -23,7 +23,7 @@ const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
 
-const { TSC } = require('../../'); // require('chie');
+const { TSC } = require('../../'); // require('node-chie');
 
 // NOTE: this example assumes that you have inquirer installed
 

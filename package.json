@@ -1,9 +1,9 @@
 {
-  "name": "chie",
+  "name": "node-chie",
   "version": "0.1.0",
   "description": "TSC encryption/decryption tool.",
   "main": "index.js",
-  "repository": "jozsefsallai/chie",
+  "repository": "jozsefsallai/node-chie",
   "author": "József Sallai @jozsefsallai",
   "license": "MIT",
   "devDependencies": {
